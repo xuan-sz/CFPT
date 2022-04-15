@@ -1,2 +1,2 @@
 # CFPT
-Public file processing tool
+Common file processing tool

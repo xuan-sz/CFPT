@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.sz.sogain</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.1.1-RELEASE</version>
+  </parent>
+  <groupId>com.sz.sogain.cfpt</groupId>
+  <artifactId>cfpt</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>cfpt</name>
+  <description>Common file processing tool</description>
+  <packaging>jar</packaging>
+  <dependencies>
+		
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-test</artifactId>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-amqp</artifactId>
+	</dependency>
+	<!-- 爬虫需要的依赖 -->
+	<dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>1.7.25</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+      <version>1.10.2</version>
+    </dependency>
+    <!-- 内置浏览器就是在抓取的程序中启动一个浏览器内核，使我们获取到 js 渲染后的页面就和静态页面一样 -->
+    <dependency>
+	   <groupId>org.seleniumhq.selenium</groupId>
+	   <artifactId>selenium-java</artifactId>
+	   <version>3.141.59</version>
+	</dependency>
+  </dependencies>
+  	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

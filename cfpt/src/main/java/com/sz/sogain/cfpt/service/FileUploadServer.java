@@ -57,6 +57,7 @@ public class FileUploadServer {
 				File newFile = new File(fileTypeDir.getAbsolutePath(), newName);
 				try {
 					multipartFile.transferTo(newFile);
+					//保存文件信息，待寫
 					list.add(file);
 				} catch (IOException e) {
 					file.setCode("500");

@@ -1,0 +1,8 @@
+/.metadata/
+target
+\target\
+.settings
+.classpath
+.factorypath
+cfpt\.project
+\classes\
